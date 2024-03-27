@@ -4,7 +4,7 @@
 class PodmanMacNetConnect < Formula
   desc "Connect directly to Podman for macOS containers via IP address 🐳 💻"
   homepage "https://github.com/jasonmadigan/podman-mac-net-connect"
-  version "0.0.5"
+  version "0.0.6"
   url "https://github.com/jasonmadigan/podman-mac-net-connect/archive/refs/tags/v#{version}.tar.gz"
   sha256 "47d5794b3ca54a98caf9a02cb357345e0edc49f8fa3336f8ace53791bf0b6df9"
   license "MIT"
@@ -27,7 +27,7 @@ class PodmanMacNetConnect < Formula
     run opt_bin/"podman-mac-net-connect"
     log_path var/"log/podman-mac-net-connect/std_out.log"
     error_log_path var/"log/podman-mac-net-connect/std_error.log"
-    environment_variables PATH: "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin", HOME: "/Users/#{ENV['USER']}"
+    environment_variables PATH: "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   end  
 
   test do
