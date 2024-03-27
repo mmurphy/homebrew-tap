@@ -27,7 +27,8 @@ class PodmanMacNetConnect < Formula
     run opt_bin/"podman-mac-net-connect"
     log_path var/"log/podman-mac-net-connect/std_out.log"
     error_log_path var/"log/podman-mac-net-connect/std_error.log"
-  end
+    environment_variables PATH: "/opt/podman/bin:#{ENV["PATH"]}"
+  end  
 
   test do
     # `test do` will create, run in and delete a temporary directory.
