@@ -4,9 +4,9 @@
 class PodmanMacNetConnect < Formula
   desc "Connect directly to Podman for macOS containers via IP address 🐳 💻"
   homepage "https://github.com/jasonmadigan/podman-mac-net-connect"
-  version "v0.0.1"
+  version "v0.0.2"
   url "https://github.com/jasonmadigan/podman-mac-net-connect/archive/refs/tags/#{version}.tar.gz"
-  sha256 "ab0433a9e3ee63da69adeab3897e86559ce11906381e9a6017b08fe79036e68b"
+  sha256 "44721826581f0ac3b3dddbc2f0640bc04f5584f70affdc275982bb39a47df360"
   license "MIT"
 
   depends_on "go" => :build
