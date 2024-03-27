@@ -4,12 +4,13 @@
 class PodmanMacNetConnect < Formula
   desc "Connect directly to Podman for macOS containers via IP address 🐳 💻"
   homepage "https://github.com/jasonmadigan/podman-mac-net-connect"
-  version "v0.0.2"
+  version "v0.0.4"
   url "https://github.com/jasonmadigan/podman-mac-net-connect/archive/refs/tags/#{version}.tar.gz"
-  sha256 "44721826581f0ac3b3dddbc2f0640bc04f5584f70affdc275982bb39a47df360"
+  sha256 "b7a2d2c39326f023a75d7023c49ae715a4d5c2b0f1b7bd9c93a5eb89006f6878"
   license "MIT"
 
   depends_on "go" => :build
+  depends_on "gpgme"
 
   def install
     if ENV["HOMEBREW_GOPROXY"]
