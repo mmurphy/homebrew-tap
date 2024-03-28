@@ -6,7 +6,7 @@ class PodmanMacNetConnect < Formula
   homepage "https://github.com/jasonmadigan/podman-mac-net-connect"
   version "0.0.7"
   url "https://github.com/jasonmadigan/podman-mac-net-connect/archive/refs/tags/v#{version}.tar.gz"
-  sha256 "7bea7acae3c0720a931ff5bd02bc65730bfc3a93b8b3128759fcd6c3f03c969a"
+  sha256 "a29a38f216f72d3fee68284a6fbfe796c4a11559e41db07953a95c76eaa488ea"
   license "MIT"
 
   depends_on "go" => :build
