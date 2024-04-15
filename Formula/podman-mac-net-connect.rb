@@ -10,7 +10,7 @@ class PodmanMacNetConnect < Formula
   license "MIT"
 
   depends_on "go" => :build
-  depends_on "gpgme" => :build
+  depends_on "gpgme" => "1.23.2+"
 
   def install
     if ENV["HOMEBREW_GOPROXY"]
